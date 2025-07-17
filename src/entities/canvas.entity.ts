@@ -9,5 +9,5 @@ export class Canvas {
   roomId: string;
 
   @Column({ type: 'json' })
-  state: '';
+  state: Record<string, unknown>;
 }
