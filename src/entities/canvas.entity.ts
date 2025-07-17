@@ -5,7 +5,7 @@ export class Canvas {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ unique: true, type: 'string' })
+  @Column({ unique: true })
   roomId: string;
 
   @Column({ type: 'json' })
