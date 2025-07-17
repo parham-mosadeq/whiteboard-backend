@@ -6,4 +6,7 @@ export class CanvasService {
   getRoom({ roomId }: GetCanvasDto) {
     return `here is your room :${roomId}`;
   }
+  postRoom({ roomId }: GetCanvasDto) {
+    return `here is your room CREATED :${roomId}`;
+  }
 }

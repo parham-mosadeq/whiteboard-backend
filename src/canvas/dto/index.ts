@@ -1,1 +1,1 @@
-export { GetCanvasDto } from './get-canvas.dto';
+export { GetCanvasDto } from './canvas/get-canvas.dto';
