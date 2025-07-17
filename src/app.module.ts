@@ -1,20 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { TypeOrmModule } from '@nestjs/typeorm';
+import { typeOrmConfigs } from './configs';
 
 @Module({
-  imports: [
-    TypeOrmModule.forRoot({
-      type: 'sqlite',
-      database: './database/whiteboard.db',
-      synchronize: true,
-      logging: true,
-      entities: [
-        /* path to your entities */
-      ],
-    }),
-  ],
+  imports: [typeOrmConfigs],
   controllers: [AppController],
   providers: [AppService],
 })
